@@ -1,0 +1,12 @@
+<ol class="post-list">
+   {{#each posts as |post|}}
+   <li>
+      <article class="post">
+         <div class="title">
+            <a href="{{post.post_text}}" target="_blank">{{post.title}}</a>
+            <span>({{post.post_text}})</span>
+         </div>
+      </article>
+   </li>
+   {{/each}}
+</ol>
