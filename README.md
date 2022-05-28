@@ -14,7 +14,7 @@
 
 This is a CMS-style blog site where developers can publish their blog posts and comment on other developers' posts.  This app follows the MCV paradigm structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-Website Screenshot.png
+![Website Screenshot](https://user-images.githubusercontent.com/99057802/170827873-0506586e-3812-453b-950c-38ed90c46496.png)
 
 ## Installation:
 
