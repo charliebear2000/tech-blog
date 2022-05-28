@@ -1,6 +1,6 @@
-const bcrypt = require('bcrypt');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require('bcrypt');
 
 class User extends Model {
    // set up method to run on instance data (per user) to check password
@@ -50,9 +50,9 @@ User.init(
          return newUserData;
           
       },
-      async beforeUpdate(updateUserData) {
-         updateUserData.password = await bcrypt.hash(updateUserData.password, 10);
-         return updateUserData;
+      async beforeUpdate(updatedUserData) {
+         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+         return updatedUserData;
        }
     },
    

@@ -1,28 +1,46 @@
 * {
    box-sizing: border-box;
+   --primary-color: #70106d;
+   --secondary-color: #962193;
  }
  
  body, html {
    height: 100%;
    padding: 0;
    margin: 0;
-   font-family: sans-serif;
+   font-family: 'KoHo', sans-serif;
    color: #333;
  }
  
  a {
    text-decoration: none;
-   color: #225ca3;
-   font-weight: bold;
+   color: var(--primary-color);
+   font-weight: 800;
    transition: color .1s;
+   margin: 8px;
+ }
+
+ p {
+   font-weight: 700;
+   font-size: 20px;
  }
  
  a:hover {
-   color: #3486eb;
+   color: var(--secondary-color);
+ }
+
+ .create-btn {
+   color: white;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .create-btn:hover {
+   color: white;
  }
  
  button {
-   background-color: #225ca3;
+   background-color: var(--primary-color);
    border: 0;
    padding: 1%;
    color: white;
@@ -33,12 +51,17 @@
  }
  
  button:hover {
-   background-color: #3486eb;
+   background-color: var(--secondary-color);
  }
  
  .post-list {
    margin: 0;
    padding: 0;
+ }
+
+ .post-title {
+   font-size: 22px;
+   margin-bottom: 6px;
  }
  
  textarea, input {
@@ -49,7 +72,7 @@
  
  textarea:focus, input:focus {
    outline: none;
-   border: 1px solid #3486eb;
+   border: 1px solid var(--secondary-color);
  }
  
  textarea {
@@ -83,7 +106,11 @@
  }
  
  header h1 {
-   font-size: 1em;
+   font-size: 30pt;
+ }
+
+ nav {
+   font-size: 25px;
  }
  
  main {
@@ -97,7 +124,7 @@
    padding: 0;
    cursor: pointer;
    text-decoration: none;
-   color: #225ca3;
+   color: var(--primary-color);
    font-size: 100%;
    font-weight: bold;
    transition: color .1s;
@@ -106,7 +133,7 @@
  
  .btn-no-style:hover {
    background: none;
-   color: #3486eb;
+   color: var(--secondary-color);
  }
  
  .delete-post-btn {
@@ -131,15 +158,6 @@
  .edit-link {
    display: block;
    margin: -1.5% 0 2% 0;
- }
- 
- .upvote-btn {
-   background-color: #197d0f;
-   transition: background-color .1s;
- }
- 
- .upvote-btn:hover {
-   background-color: #1f9c13;
  }
  
  .comment-form {
