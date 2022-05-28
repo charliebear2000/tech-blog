@@ -22,7 +22,7 @@ To install this aplication, you will clone the repository from GitHub.  You will
 
 ## Usage:
 
-The live deployed application can be found at this Heroku [URL](https://https://agile-castle-82276.herokuapp.com/).  This application allows users to sign up to be a member. Once they are logged in, they can view the dashboard of posts, add, edit, and delete posts and add comments to other user's posts. 
+The live deployed application can be found at this Heroku [URL](https://agile-castle-82276.herokuapp.com/).  This application allows users to sign up to be a member. Once they are logged in, they can view the dashboard of posts, add, edit, and delete posts and add comments to other user's posts. 
 
 ## Tests
 
